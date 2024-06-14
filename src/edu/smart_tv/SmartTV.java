@@ -1,5 +1,14 @@
 package edu.smart_tv;
-
+/**
+* <h1>Smart TV</h1>
+* A Smart TV apresenta a dinâmica do funcionamento de uma televisão. Por hora apenas as funções básicas foram implementadas.
+* <p>
+* <b>Note:</b> Leia atentamente a documentação desta classes para desfrutar dos recursos oferecidos pelo autor
+* 
+* @author Jairo Machado
+* @version 1.0
+* @since 14/06/2024
+*/
 public class SmartTV {
     
     private boolean ligada;
@@ -12,10 +21,14 @@ public class SmartTV {
         this.volume =25;
     }
 
+    /**
+     * Este método é utilizado para trocar o canal sendo exibido na TV.
+     * @param canal é um número inteiro que representa o canal o qual a TV irá passar a exibir.
+     */
     public void trocarCanal(int canal){
         this.canal = canal;
     }
-        
+    
     public void ligar(){
         ligada = true;
     }
@@ -44,7 +57,6 @@ public class SmartTV {
         volume = 0;
     }
 
-    @Override
     public String toString() {
         /*return "SmartTV{" +
                 "state=" + ligada +
